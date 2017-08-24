@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m5N-mN-Kk1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="0uq-fB-rOc">
+            <objects>
+                <navigationController id="m5N-mN-Kk1" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" barStyle="blackTranslucent" id="qCF-ib-aUB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="9R6-VZ-8mv" kind="relationship" relationship="rootViewController" id="Do4-T5-lJh"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dl3-7N-cma" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2124" y="-658"/>
+        </scene>
+        <!--Water Later-->
+        <scene sceneID="MPb-mU-zyh">
+            <objects>
+                <viewController id="9R6-VZ-8mv" customClass="ViewController" customModule="project2_playLocalVideos" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="geZ-mY-Q1F"/>
+                        <viewControllerLayoutGuide type="bottom" id="Fvn-Dh-tNM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Fr-eH-vTI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="157" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="N9M-FL-5FX">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoCell" rowHeight="220" id="bcd-LD-IaI" customClass="VideoCell" customModule="project2_playLocalVideos" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="220"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bcd-LD-IaI" id="drr-T7-jSb">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="videoScreenshot01" translatesAutoresizingMaskIntoConstraints="NO" id="oja-Yt-p31">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="220"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Youtube - 06:32" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ycb-hf-UJr">
+                                                    <rect key="frame" x="151" y="205" width="73" height="14"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="14" id="Wa9-An-Ctb"/>
+                                                        <constraint firstAttribute="height" constant="14" id="fQJ-Gh-7ja"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="10"/>
+                                                    <color key="textColor" red="0.99987119440000005" green="0.99998223779999995" blue="0.99984109399999999" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="Wa9-An-Ctb"/>
+                                                        </mask>
+                                                    </variation>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji Among Us" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWN-PU-FrS">
+                                                    <rect key="frame" x="128" y="181" width="119" height="20"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="14"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PiH-x8-3pN">
+                                                    <rect key="frame" x="87" y="68" width="200" height="100"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="100" id="6Q5-sQ-cVk"/>
+                                                        <constraint firstAttribute="width" constant="200" id="7gK-N1-tTG"/>
+                                                    </constraints>
+                                                    <state key="normal" image="playBtn"/>
+                                                    <connections>
+                                                        <action selector="palyVideoBtnDidtouched:" destination="9R6-VZ-8mv" eventType="touchUpInside" id="X3H-mm-HhA"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="pWN-PU-FrS" firstAttribute="top" secondItem="PiH-x8-3pN" secondAttribute="bottom" constant="13" id="Aew-KH-nVa"/>
+                                                <constraint firstAttribute="trailing" secondItem="oja-Yt-p31" secondAttribute="trailing" id="Edu-h7-GWa"/>
+                                                <constraint firstAttribute="bottom" secondItem="ycb-hf-UJr" secondAttribute="bottom" constant="1" id="KWp-Je-Lzz"/>
+                                                <constraint firstItem="pWN-PU-FrS" firstAttribute="centerX" secondItem="PiH-x8-3pN" secondAttribute="centerX" id="MDl-RB-1nK"/>
+                                                <constraint firstItem="ycb-hf-UJr" firstAttribute="top" secondItem="pWN-PU-FrS" secondAttribute="bottom" constant="4" id="Pni-Uo-tfD"/>
+                                                <constraint firstItem="oja-Yt-p31" firstAttribute="leading" secondItem="drr-T7-jSb" secondAttribute="leading" id="aqJ-49-2iM"/>
+                                                <constraint firstItem="pWN-PU-FrS" firstAttribute="centerX" secondItem="ycb-hf-UJr" secondAttribute="centerX" id="kD2-co-Kna"/>
+                                                <constraint firstItem="oja-Yt-p31" firstAttribute="top" secondItem="drr-T7-jSb" secondAttribute="top" id="q2M-OX-cHt"/>
+                                                <constraint firstItem="ycb-hf-UJr" firstAttribute="centerX" secondItem="oja-Yt-p31" secondAttribute="centerX" id="reD-kN-tb6"/>
+                                                <constraint firstAttribute="bottom" secondItem="oja-Yt-p31" secondAttribute="bottom" id="vFw-7o-Q7Y"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="videoScreenshot" destination="oja-Yt-p31" id="dSq-e3-hN2"/>
+                                            <outlet property="videoSourceLable" destination="ycb-hf-UJr" id="EDO-K0-mlc"/>
+                                            <outlet property="videoTitleLable" destination="pWN-PU-FrS" id="z8x-ro-O2C"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="N9M-FL-5FX" secondAttribute="trailing" id="CJ1-Jc-u9e"/>
+                            <constraint firstItem="N9M-FL-5FX" firstAttribute="top" secondItem="7Fr-eH-vTI" secondAttribute="top" id="J9Y-qV-K8G"/>
+                            <constraint firstItem="N9M-FL-5FX" firstAttribute="leading" secondItem="7Fr-eH-vTI" secondAttribute="leading" id="sjm-72-GbV"/>
+                            <constraint firstItem="Fvn-Dh-tNM" firstAttribute="top" secondItem="N9M-FL-5FX" secondAttribute="bottom" id="uYH-HH-GpY"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Water Later" id="peH-DI-w8U"/>
+                    <connections>
+                        <outlet property="videoTableView" destination="N9M-FL-5FX" id="TEP-4u-EmV"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bwR-Ew-4GI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1473" y="-658"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="playBtn" width="60" height="60"/>
+        <image name="videoScreenshot01" width="375" height="220"/>
+    </resources>
+</document>
